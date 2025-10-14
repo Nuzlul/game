@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jet Cyber Mobile — FIXED</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="game stayles.css">
+</head>
+<body>
+  <div id="introScreen"><div id="introText"> NRFShadow Present<br>ANR STUDIO™</div></div>
+
+  <div id="hud">
+    Score: <span id="score">0</span> |
+    High Score: <span id="highscore">0</span><br>
+    Peluru: <span id="ammo">20</span>/20<br>
+    Level: <span id="level">0</span>
+  </div>
+  
+  <audio id="laserSound" src="laser.mp3"></audio>
+
+  <div id="gameOver">
+     GAME OVER <br>
+    <button id="restartBtn">Main Lagi</button>
+    <button id="kembaliBtn">Kembali</button>
+  </div>
+
+  <div id="menu">
+    <button id="btnContinue">Lanjutkan</button><br>
+    <button id="btnNew">Main Baru</button><br>
+    <button id="btnReset">Reset Game</button>
+  </div>
+
+  <canvas id="gameCanvas"></canvas>
+
+  <div id="controls">
+    <div class="btn" id="btn-up">↑</div>
+    <div class="btn" id="btn-down">↓</div>
+    <div class="btn" id="btn-left">←</div>
+    <div class="btn" id="btn-right">→</div>
+  </div>
+  
+  <div id="healthBarContainer">
+  <div id="healthBar"></div>
+</div>
+  
+  <button id="fire">FIRE</button>
+   <button id="pauseBtn">||</button> 
+  <button id="fullscreenBtn">⤢ Fullscreen</button>
+  <!--- <button id="pauseBtn" class="pause-btn" title="Pause">
+  <span class="icon pause-icon"></span>
+</button>-->
+
+  <script src="game js.js"></script>
+</body>
+</html>
